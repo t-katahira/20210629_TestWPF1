@@ -11,6 +11,7 @@
         <Button Content="load" HorizontalAlignment="Left" Margin="600,40,0,0" VerticalAlignment="Top" Width="76" Click="image_load"/>
         <Button Content="pattern1" HorizontalAlignment="Left" Margin="600,80,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click1"/>
         <Button Content="pattern2" HorizontalAlignment="Left" Margin="600,120,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click2"/>
+        <Button Content="pattern3" HorizontalAlignment="Left" Margin="600,160,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click3"/>
         <Image Source="{Binding Path=BmpImg}" Margin="656,443,0,0" Height="100" Width="100"/>
 
     </Grid>

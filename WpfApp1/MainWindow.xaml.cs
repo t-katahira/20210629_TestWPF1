@@ -108,7 +108,6 @@ namespace WpfApp1
             var ms = new MemoryStream(_BitArray);
             var bi = new BitmapImage();
 
-            //BitmapImage test = ToImage(_BitArray);
             bi.BeginInit();
             bi.CacheOption = BitmapCacheOption.OnLoad;
             bi.CreateOptions = BitmapCreateOptions.None;
@@ -129,10 +128,36 @@ namespace WpfApp1
                 image.CacheOption = BitmapCacheOption.OnLoad; // here
                 image.StreamSource = ms;
                 image.EndInit();
-                this.imgName.Source = image;
                 return image;
             }
         }
+
+        
+        /// <summary>
+        /// パターン３
+        /// </summary>
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            Bitmap bitmap = new Bitmap(_width, _height);
+
+            for (int y = 0; y < _height; y++)
+            {
+                for (int x = 0; x < _width; x++)
+                {
+                    int value = _BitData[y * _width + x];
+                    System.Drawing.Color color = System.Drawing.Color.FromArgb(255, value, value, value);
+                    bitmap.SetPixel(x, y, color);
+                }
+            }
+
+            // 表示
+            IntPtr hbitmap = bitmap.GetHbitmap();
+            imgName.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(hbitmap, IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
+            DeleteObject(hbitmap);
+
+        }
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        public static extern bool DeleteObject(IntPtr hObject);
 
 
 
