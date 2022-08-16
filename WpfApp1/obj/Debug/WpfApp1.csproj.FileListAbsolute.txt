@@ -1,0 +1,15 @@
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\as1816\Desktop\katahira\04_work\20220501_新アプリ開発\02_soft\20220803_wpf\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache

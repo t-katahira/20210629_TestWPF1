@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Image x:Name="imgName" HorizontalAlignment="Left" Height="480" Width="480" Margin="0,0,0,0" />
+        <Button Content="load" HorizontalAlignment="Left" Margin="600,40,0,0" VerticalAlignment="Top" Width="76" Click="image_load"/>
+        <Button Content="pattern1" HorizontalAlignment="Left" Margin="600,80,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click1"/>
+        <Button Content="pattern2" HorizontalAlignment="Left" Margin="600,120,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click2"/>
+        <Image Source="{Binding Path=BmpImg}" Margin="656,443,0,0" Height="100" Width="100"/>
+
+    </Grid>
+</Window>
