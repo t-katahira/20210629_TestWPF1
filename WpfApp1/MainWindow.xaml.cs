@@ -51,6 +51,8 @@ namespace WpfApp1
         int _count = 1;
         //string filePath = Directory.GetCurrentDirectory() + "\\image3.bmp";
         byte[] _BitData;
+        byte[] _BitArray;
+
         int _width;
         int _height;
 
@@ -66,6 +68,21 @@ namespace WpfApp1
             _width = bih.biWidth;
             _height = bih.biHeight;
 
+
+            System.IO.FileStream fs = new System.IO.FileStream(
+                filePath,
+                System.IO.FileMode.Open,
+                System.IO.FileAccess.Read);
+
+            _BitArray = new byte[fs.Length];
+            fs.Read(_BitArray, 0, _BitArray.Length);
+            fs.Close();
+
+
+
+
+
+            MessageBox.Show("load complete.");
         }
 
         /// <summary>
@@ -88,10 +105,34 @@ namespace WpfApp1
         /// </summary>
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
+            var ms = new MemoryStream(_BitArray);
+            var bi = new BitmapImage();
+
+            //BitmapImage test = ToImage(_BitArray);
+            bi.BeginInit();
+            bi.CacheOption = BitmapCacheOption.OnLoad;
+            bi.CreateOptions = BitmapCreateOptions.None;
+
+            bi.StreamSource = ms;
+            bi.EndInit();
+            this.imgName.Source = bi;
+            bi.Freeze();
 
         }
 
-
+        public BitmapImage ToImage(byte[] array)
+        {
+            using (var ms = new System.IO.MemoryStream(array))
+            {
+                var image = new BitmapImage();
+                image.BeginInit();
+                image.CacheOption = BitmapCacheOption.OnLoad; // here
+                image.StreamSource = ms;
+                image.EndInit();
+                this.imgName.Source = image;
+                return image;
+            }
+        }
 
 
 
